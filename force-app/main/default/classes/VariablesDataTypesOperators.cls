@@ -98,7 +98,11 @@ public with sharing class VariablesDataTypesOperators {
      * @return True if the number is even, False otherwise.
      */
     public static Boolean isEven(Integer num) {
-        return null; // Replace null with the variable you used to store the result
+        Boolean evenCheck;
+        if (Math.mod(num, 2)== 0) {
+            return evenCheck = true;
+        } return evenCheck = false;
+        
     }
 
     /**
@@ -109,7 +113,11 @@ public with sharing class VariablesDataTypesOperators {
      * @return true if the number is positive, false otherwise.
      */
     public static Boolean isPositive(Integer num) {
-        return null; // Replace null with the variable you used to store the result
+        boolean positiveCheck;
+        if (num > 0) {
+            return positiveCheck = true;
+        } return positiveCheck = false;
+        
     }
 
     /**
@@ -121,7 +129,8 @@ public with sharing class VariablesDataTypesOperators {
      * @return The concatenated string.
      */
     public static String concatenateStrings(String str1, String str2) {
-        return null; // Replace null with the variable you used to store the result
+        String s;
+        return s = str1 + str2;
     }
 
 	/**
@@ -136,7 +145,8 @@ public with sharing class VariablesDataTypesOperators {
 	 * @return The complete sentence as a single String.
 	 */
 	public static String createSentence(String noun, String verb, String endingPunctuation) {
-		return null; // Replace null with the variable you used to store the result
+        String sentance;
+        return sentance = 'The '+ noun + ' is ' + verb + '!'; 
 	}
 
     /**
