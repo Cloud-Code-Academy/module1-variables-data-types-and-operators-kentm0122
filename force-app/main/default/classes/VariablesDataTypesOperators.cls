@@ -146,7 +146,7 @@ public with sharing class VariablesDataTypesOperators {
 	 */
 	public static String createSentence(String noun, String verb, String endingPunctuation) {
         String sentance;
-        return sentance = 'The '+ noun + ' is ' + verb + '!'; 
+        return sentance = 'The '+ noun + ' is ' + verb + endingPunctuation; 
 	}
 
     /**
@@ -159,7 +159,11 @@ public with sharing class VariablesDataTypesOperators {
      * @return True if the date is in the past, False otherwise.
      */
     public static Boolean isDateInPast(Date dt) {
-        return null; // Replace null with the variable you used to store the result
+        Boolean dateCheck;
+        if (dt < Date.today()) {
+            return dateCheck = true;
+        } return dateCheck = False;
+    
     }
 
     /**
